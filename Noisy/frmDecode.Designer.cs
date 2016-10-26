@@ -47,7 +47,7 @@
             this.ofdLoadClear.DefaultExt = "jpg";
             this.ofdLoadClear.Filter = "JPG Images|*.jpg|All Files|*.*";
             this.ofdLoadClear.Title = "Load Image";
-            this.ofdLoadClear.FileOk += new System.ComponentModel.CancelEventHandler(this.ofdLoadImg_FileOk);
+            this.ofdLoadClear.FileOk += new System.ComponentModel.CancelEventHandler(this.ofdLoadClear_FileOk);
             // 
             // tlpMain
             // 
@@ -119,7 +119,7 @@
             // 
             this.ofdLoadEncoded.Filter = "All Files|*.*";
             this.ofdLoadEncoded.Title = "Load File";
-            this.ofdLoadEncoded.FileOk += new System.ComponentModel.CancelEventHandler(this.ofdLoadTxt_FileOk);
+            this.ofdLoadEncoded.FileOk += new System.ComponentModel.CancelEventHandler(this.ofdLoadEncoded_FileOk);
             // 
             // sfdSaveImg
             // 
@@ -136,7 +136,7 @@
             this.Controls.Add(this.tlpMain);
             this.MinimumSize = new System.Drawing.Size(265, 160);
             this.Name = "frmDecode";
-            this.Text = "Noisy Encoder";
+            this.Text = "Noisy Decoder";
             this.tlpMain.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pbxPreview)).EndInit();
             this.flpButtons.ResumeLayout(false);
